@@ -7,6 +7,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1 () {
@@ -91,6 +92,24 @@ public class Main {
             System.out.println("«Если возраст ребенка равен " + age + " то ему можно кататься на аттракционе в сопровождении взрослого».");
         } else if (age >= 14) {
             System.out.println("«Если возраст ребенка равен " + age + " то ему можно кататься на аттракционе без сопровождения взрослого».");
+        }
+
+    }
+
+    public static void task6 () {
+
+        System.out.println("Задача 6");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите число");
+        int place = sc.nextInt();
+
+        if (place >= 1 && place <= 60) {
+            System.out.println("В вагоне есть сидячее место.");
+        } else if (place > 61 && place <= 102) {
+            System.out.println("В вагоне осталось стоячее место.");
+        } else if (place >= 103) {
+            System.out.println("Вагон уже полностью забит.");
         }
 
     }
