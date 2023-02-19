@@ -5,6 +5,7 @@ public class Main {
         task1 ();
         task2 ();
         task3();
+        task4();
     }
 
     public static void task1 () {
@@ -53,6 +54,25 @@ public class Main {
         }
         else {
             System.out.println("«Если скорость " + speed + ", то придется заплатить штраф»");
+        }
+    }
+
+    public static void task4 () {
+
+        System.out.println("Задача 4");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите возраст человека");
+        int chAge = sc.nextInt();
+
+        if (chAge >= 2 && chAge <= 6) {
+            System.out.println("«Если возраст человека равен " + chAge + ", то ему нужно ходить в детский сад».");
+        } else if (chAge >= 7 && chAge <= 18) {
+            System.out.println("«Если возраст человека равен " + chAge + ", то ему нужно ходить в в школу».");
+        } else if (chAge > 18 && chAge <= 24) {
+            System.out.println("«Если возраст человека равен " + chAge + ", то его место в университете».");
+        } else if (chAge > 24) {
+            System.out.println("«А если человеку больше 24, то ему пора ходить на работу».");
         }
     }
 
