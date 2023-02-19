@@ -8,6 +8,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1 () {
@@ -112,6 +113,31 @@ public class Main {
             System.out.println("Вагон уже полностью забит.");
         }
 
+    }
+
+    public static void task7 () {
+
+        System.out.println("Задача 7");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите 1 число");
+        int one = sc.nextInt();
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите 2 число");
+        int two = sc.nextInt();
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите 3 число");
+        int three = sc.nextInt();
+
+        if (one > two && one > three) {
+            System.out.println(one);
+        } else if (two > one && two> three) {
+            System.out.println(two);
+        } else if (three > one && three > two) {
+            System.out.println(three);
+        }
     }
 
 }
